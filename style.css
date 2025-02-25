@@ -8,7 +8,16 @@
 }
 body {
   background: #f2f2f2;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
 :root {
   --white-color: #fff;
   --black-color: #000;
@@ -158,6 +167,7 @@ section {
     }
 }
 /* INFO: Content */
+
 .custom{
     display: flex;
     height: 350px;
