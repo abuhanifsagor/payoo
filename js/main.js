@@ -9,6 +9,7 @@
         navBar.classList.remove('scrolled')
     }
 
+    
     let herobg = document.querySelector('.heroBg');
     if(window.scrollY > 0){
         herobg.style.height = ' 80%';
