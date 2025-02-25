@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+body {
+  background: #f2f2f2;
+}
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --p-color: #999;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+.container {
+  max-width: 1340px ;
+  margin: 0 auto;
+}
+
+/* INFO: Nav */
+.navBar {
+  position: fixed;
+  top: 39px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100px !important;
+  background: rgb(0, 162, 255);
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: 1.5s;
+  transition: .8s all ease-in-out;
+}.navBar:hover{
+    width: 100% !important;
+    .login-btn{
+        display: block;
+    }
+}
+.scrolled {
+  background: rgba(0, 0, 0, 0.589);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  display: none;
+  border-radius: 0.5rem;
+  background: rgba(4, 104, 255, 0.781);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  box-shadow: 5px 5px 8px 0px rgba(29, 29, 29, 0.349);
+  &:focus {
+    background: rgba(0, 0, 0, 0.685);
+  }
+}
+
+
+/* INFO: Login Modal */
+
+/* INFO: Banner */
+
+.banner_conatiner {
+  width: 100%;
+  height: 80dvh;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--black-color);
+  h1 {
+    color: var(--white-color);
+    text-transform: capitalize;
+  }
+  p {
+    color: var(--p-color);
+  }
+  .banner_btn {
+    text-align: center;
+      animation:  fly 1s ease-in-out infinite alternate;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#010101, #161515);
+    z-index: 1;
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.heroBg{
+    position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transition: all .5s ease-in-out;
+   margin: auto;
+    width: 90%;
+    height: 60%;
+    z-index:2;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.banner_content{
+    z-index: 5;
+}
+
+.ani{
+    transform:  translateY(100px);
+    transition: all .3s ease-in-out;
+    transition-delay: .5s;
+    opacity: 0;
+}
+.heroBg{
+    opacity: 1;
+}
+#hero{
+    transform: scale(1.5);
+    transition: all .5s ease-in-out;
+}
+
+.trusted_conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    img{
+        max-width: 150px;
+    }
+}
+/* INFO: Content */
+.custom{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white-color);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px rgb(255, 255, 255) ;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p{
+        color: var(--p-color);
+        margin: 1rem 0;
+        
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
