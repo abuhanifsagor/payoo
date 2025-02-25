@@ -20,7 +20,6 @@
 
  window.addEventListener('load', function(){
     let navBar = document.getElementsByClassName('navBar') [0];
-
     let hero = document.getElementById('hero');
     let content = document.querySelector('.ani' );
 
@@ -30,3 +29,18 @@
     navBar.style.opacity = '1';    
  })
 
+ document.getElementById('singIn').addEventListener('click', function(e){
+    e.preventDefault();
+     let userName = document.getElementById('username').value;
+     let pin = document.getElementById('pin');
+
+    if(pin.value !== "12345"){
+        pin.classList.add('error');
+    } else{
+        pin.classList.remove('error');
+        window.location.href = '/main.html'
+    }
+
+    
+
+ })

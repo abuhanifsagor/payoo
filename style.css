@@ -193,3 +193,21 @@ section {
         height: 250px;
     }
 }
+.myLogo{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/images/bg.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  img{
+    width: 65px;
+    height: 65px;
+  }
+}
+.error{
+  border: 1px solid red !important;
+}
