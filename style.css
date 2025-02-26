@@ -211,3 +211,50 @@ section {
 .error{
   border: 1px solid red !important;
 }
+.money{
+  background-image: linear-gradient( to bottom, #0a3f8f , #0a7b8f);
+  p{
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+.box{
+  background: #a5e5d283;
+  transition: .3s ease-in-out;
+  &:hover{
+    background: #a5e5d2;
+  }
+}
+.boxs{
+  background: white;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1),
+  -4px -4px 4px rgb(255, 255, 255) ;
+  transition: .3s ease-in-out;
+  &:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1),
+    -3px -3px 3px rgb(255, 255, 255) ;
+  }
+}
+.service{
+  p{
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+#confirm-button{
+  color: white;
+  font-weight: 700;
+  background: #1270b8;
+  transition: .3s ease-in-out;
+  &:hover{
+    background: #119cb4;
+  }
+}
