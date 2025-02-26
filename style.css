@@ -115,7 +115,10 @@ section {
     z-index: 1;
   }
 }
-
+.main-body{
+   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px rgb(255, 255, 255);
+}
 @keyframes fly {
   0% {
     transform: translateY(5px);
