@@ -29,7 +29,9 @@ window.addEventListener("load", function () {
 document.getElementById("singIn").addEventListener("click", function (e) {
   e.preventDefault();
   let username  = document.getElementById("username").value;
-  localStorage.setItem("username", username)
+
+    localStorage.setItem("username", username)
+
   let pin = document.getElementById("pin");
   if (pin.value !== "12345" ) {
     pin.classList.add("error");
