@@ -35,7 +35,7 @@ document.getElementById("singIn").addEventListener("click", function (e) {
     pin.classList.add("error");
   } else {
     pin.classList.remove("error");
-    window.location.href = "app.html";
+    window.location.href = "../app.html";
   }
 });
 
