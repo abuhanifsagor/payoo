@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="assets/images/Group.png" type="image/x-icon" />
 
-    <title>This is payoo </title>
+    <title>This is payoo</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  
+
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-  
 
-
-
-  <!-- INFO: main css -->
+    <!-- INFO: main css -->
     <link rel="stylesheet" href="style.css" />
-
 </head>
-<body>
-    
 
-    <div class="  w-full flex justify-center items-center  h-screen bg-[#f9f9f9]">
-        <div class=" relative main-body p-4 rounded-2xl  w-80 h-[630px] overflow-hidden mx-auto bg-[#f9f9f9] ">
-            <header class="flex justify-between items-center mt-4 ">
-                <div class="flex  items-center gap-2">
-                    <div class=" border-2  border-[#00d9ff]  h-[52px] w-[52px] overflow-hidden bg-[url('assets/images/luffy.jpeg')] bg-cover bg-center  bg-black rounded-full ">
+<body>
+    <div class="w-full flex justify-center items-center h-screen bg-[#f9f9f9]">
+        <div class="relative main-body p-4 rounded-2xl w-80 h-[630px] overflow-hidden mx-auto bg-[#f9f9f9]">
+            <header class="flex justify-between items-center mt-4">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="border-2 border-[#00d9ff] h-[52px] w-[52px] overflow-hidden bg-[url('assets/images/luffy.jpeg')] bg-cover bg-center bg-black rounded-full">
                     </div>
                     <div>
                         <p class="text-xs text-gray-400">Welcome to Payoo</p>
-                        <h1  class="username text-lg font-bold"> </h1>
+                        <h1 class="username text-lg font-bold"></h1>
                     </div>
-
                 </div>
 
                 <div class="flex items-center gap-2">
-                    
                     <div class="hover:bg-[#00f7ff33] transition duration-300 p-1 rounded-full">
-                        <img src="assets/images/notification-bell.png" alt="">
+                        <img src="assets/images/notification-bell.png" alt="" />
                     </div>
                     <div class="hover:bg-[#00f7ff33] transition duration-300 p-1 rounded-full">
-                        <a href="index.html"><img src="assets/images/logout.png" alt=""></a>
+                        <a href="index.html"><img src="assets/images/logout.png" alt="" /></a>
                     </div>
-
                 </div>
             </header>
 
             <div class="money mt-4 rounded-2xl p-5">
                 <div class="flex justify-between">
                     <div>
-                        <h1  class="username  text-lg font-extrabold text-white"> </h1>
-                         <p class="text-sm font-extrabold text-slate-100 opacity-70">**** **** **** 6709</p>
+                        <h1 class="username text-lg font-extrabold text-white"></h1>
+                        <p class="text-sm font-extrabold text-slate-100 opacity-70">
+                            **** **** **** 6709
+                        </p>
                     </div>
                     <div class="w-11">
-                        <img src="assets/images/Group.png" alt="">
+                        <img src="assets/images/Group.png" alt="" />
                     </div>
                 </div>
                 <div class="mt-4">
-                    <p class="text-sm font-extrabold text-slate-100 opacity-70">Your balance</p>
-                    <h1 class="text-4xl font-extrabold  text-white">$<span id="myBalance">0.00</span></h1>
+                    <p class="text-sm font-extrabold text-slate-100 opacity-70">
+                        Your balance
+                    </p>
+                    <h1 class="text-4xl font-extrabold text-white">
+                        $<span id="myBalance">0.00</span>
+                    </h1>
                 </div>
 
-                <div class="boxOfworks p-3  mt-4 bg-[#f9f9f9] rounded-2xl flex justify-evenly gap-4 ">
-
+                <div class="boxOfworks p-3 mt-4 bg-[#f9f9f9] rounded-2xl flex justify-evenly gap-4">
                     <dialog id="my_modal_3" class="modal w-80 mx-auto">
                         <div class="modal-box">
                             <form method="dialog">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                                    ✕
+                                </button>
                             </form>
                             <h3 id="modal-title" class="text-lg font-bold"></h3>
                             <p id="modal-content" class="py-2"></p>
-                            
-                           <form class="flex flex-col justify-center" action="">
-                            <input id="amount-input" type="number" placeholder="Enter amount" class="input input-bordered w-full my-2" />
-                            
-                            <button type="submit"  id="confirm-button" class="btn  mx-auto w-2/3 mt-2"></button>
-                           </form>
+
+                            <form class="flex flex-col justify-center" action="">
+                                <input id="amount-input" type="number" placeholder="Enter amount"
+                                    class="input input-bordered w-full my-2" />
+
+                                <button type="submit" id="confirm-button" class="btn mx-auto w-2/3 mt-2"></button>
+                            </form>
                         </div>
                     </dialog>
-                    
-                    <div class="flex flex-col items-center gap-2" onclick="openModal('Deposit', 'Add money to your account', 'Deposit Money')">
+
+                    <div class="flex flex-col items-center gap-2"
+                        onclick="openModal('Deposit', 'Add money to your account', 'Deposit Money')">
                         <div class="box rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/moneys.png" alt="">
+                            <img class="w-6 h-6" src="assets/images/bank/moneys.png" alt="" />
                         </div>
                         <p class="text-xs">Deposit</p>
                     </div>
-                    
-                    <div class="flex flex-col items-center gap-2" onclick="openModal('Withdraw', 'Withdraw money from your account', 'Withdraw Money')">
+
+                    <div class="flex flex-col items-center gap-2"
+                        onclick="openModal('Withdraw', 'Withdraw money from your account', 'Withdraw Money')">
                         <div class="box rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/cashout.png" alt="">
+                            <img class="w-6 h-6" src="assets/images/bank/cashout.png" alt="" />
                         </div>
                         <p class="text-xs">Withdraw</p>
                     </div>
-                    
-                    <div class="flex flex-col items-center gap-2 " onclick="openModal('Swap', 'Swap your funds between accounts', 'Swap Money')">
+
+                    <div class="flex flex-col items-center gap-2"
+                        onclick="openModal('Swap', 'Swap your funds between accounts', 'Swap Money')">
                         <div class="box rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/money.png" alt="">
+                            <img class="w-6 h-6" src="assets/images/bank/money.png" alt="" />
                         </div>
                         <p class="text-xs">Swap</p>
                     </div>
-
                 </div>
             </div>
 
@@ -115,70 +119,85 @@
 
                 <div class="grid grid-cols-4 gap-4 mt-4">
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/pay.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/pay.png" alt="" />
                         </div>
                         <p class="text-xs">Pay</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/fire.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/fire.png" alt="" />
                         </div>
                         <p class="text-xs">Gas</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6"  src="assets/images/bank/elec.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/elec.png" alt="" />
                         </div>
                         <p class="text-xs">Electricity</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/shp.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/shp.png" alt="" />
                         </div>
                         <p class="text-xs">Shop</p>
                     </div>
 
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6"  src="assets/images/bank/health.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/health.png" alt="" />
                         </div>
                         <p class="text-xs">Health</p>
                     </div>
+
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/history.png" alt="">
+                        <label for="my_modal_7" class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/history.png" alt="" />
+                        </label>
+
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box px-3 py-5 bg-[#f9f9f9] w-72 mx-auto">
+                                <h3 class="text-lg font-bold">Transactions</h3>
+                                <div class="py-4 px-5 flex justify-between">
+                                    <div class="text-xs font-semibold">Date</div>
+                                    <div class="text-xs font-semibold">Amount</div>
+                                </div>
+                                <div id="history" class="flex flex-col gap-3 max-h-[210px]">
+
+                               
+                                </div>
+                                <p class="text-xs text-center opacity-40 mt-4">
+                                    Thank you for using our service
+                                </p>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_7"></label>
                         </div>
                         <p class="text-xs">Transactions</p>
                     </div>
+
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/saveings.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/saveings.png" alt="" />
                         </div>
                         <p class="text-xs">Savings</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <div class=" boxs rounded-full flex justify-center items-center w-12 h-12">
-                            <img class="w-6 h-6" src="assets/images/bank/card.png" alt="">
+                        <div class="boxs rounded-full flex justify-center items-center w-12 h-12">
+                            <img class="w-6 h-6" src="assets/images/bank/card.png" alt="" />
                         </div>
                         <p class="text-xs">Cards</p>
                     </div>
                 </div>
             </div>
 
-
-            <div class="w-2/5 rounded-full p-[3px] absolute bottom-2 left-0 right-0 mx-auto bg-[#d8d6d6]">
-               
-            </div>
+            <div class="w-2/5 rounded-full p-[3px] absolute bottom-2 left-0 right-0 mx-auto bg-[#d8d6d6]"></div>
         </div>
     </div>
-
-
-   
-
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>

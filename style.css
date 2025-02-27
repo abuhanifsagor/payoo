@@ -261,3 +261,22 @@ input[type="number"]::-webkit-outer-spin-button {
     background: #119cb4;
   }
 }
+#history{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 12px;
+  
+}
+#history{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+#history::-webkit-scrollbar{
+  display: none;
+
+}
+.history-items{
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1),
+  -4px -4px 4px rgb(255, 255, 255) ;
+}
